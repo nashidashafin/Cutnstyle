@@ -45,7 +45,40 @@
         .modal-title,.modal-body,.btn{
           font-family:'EB Garamond', serif;
         }
-       
+
+        .navbar-toggler:hover{
+          border-color: orange;
+        }
+        .nav-item:hover{
+          text-decoration: underline;
+          text-decoration-color:orange ;
+          text-underline-offset: 10px;
+          
+        }
+        /* .nav-link{
+          text-decoration: none;
+        }
+        .nav-link:hover{
+          color: orange;
+         
+
+        }
+        */
+
+        @media (max-width:800px) {
+          .carousel-indicators [data-bs-target] {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+}
+          }
+          
+        @media(max-width:800px){
+          carousel-control-prev-icon [data-bs-slide] {
+            display: none;
+          }
+           
+        }
  
 
       
@@ -61,8 +94,8 @@
         <div class="container">
           <a class="navbar-brand text-white" href="#"><img src="./images/copyy-removebg-preview.png" alt="" style="width: 150px; height: 40px;">
             </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-bs-theme="dark" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-5" style="font-family:'EB Garamond', serif;">
