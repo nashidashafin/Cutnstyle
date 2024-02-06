@@ -30,6 +30,22 @@
           font-family: 'Libre Baskerville', serif;
         }
 
+        input{
+          border: 0;
+        }
+        modal-dialog{
+               padding: 50%  ;
+          
+
+        }
+        .btn-close{
+          font-size: small;
+        }
+
+        .modal-title,.modal-body,.btn{
+          font-family:'EB Garamond', serif;
+        }
+       
  
 
       
@@ -136,6 +152,61 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Book Your Slot
+</button>
+
+<!-- Modal -->
+<div class="modal fade container" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Grab Your Slot Now</h1>
+        <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Grab Your Slot Now</h1>
+        <button type="button" class="btn-close me-auto" data-bs-dismiss="modal" aria-label="Close"></button> -->
+
+        <div class="mb-3">
+          <!-- <label for="exampleFormControlInput1" class="form-label">Name</label> -->
+          <input type="text" class="form-control border-0" id="exampleFormControlInput1" placeholder="Name">
+          <hr>
+        </div>
+        
+        
+        <div class="mb-3">
+          <!-- <label for="exampleFormControlInput1" class="form-label">Name</label> -->
+          <input type="tel" class="form-control border-0" id="exampleFormControlInput2" placeholder="Mobile">
+          <hr>
+        </div>
+        
+        <div class="mb-3">
+          <!-- <label for="exampleFormControlInput1" class="form-label">Name</label> -->
+          <input type="email" class="form-control border-0" id="exampleFormControlInput3" placeholder="Email">
+          <hr>
+        </div>
+        
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label ms-2 text-secondary">Take your slot</label>
+          <input type="datetime-local" class="form-control border-0" id="exampleFormControlInput3" placeholder="Name">
+          <hr>
+        </div>
+        
+                <div>
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <button type="button" class="btn btn-outline-warning">Book Now</button>
+                </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
