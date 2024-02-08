@@ -1,0 +1,154 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Protest+Revolution&display=swap');
+        /* .navbar-brand{
+            font-family: 'Protest Riot', sans-serif;
+        } */
+        body{
+          margin-top: 0;
+          margin-right: 0;
+        }
+
+        img{
+            height: 400px;
+        }
+
+        .carousel-indicators .active{
+          background-color: orange;
+
+        }
+        h5{
+          font-family: 'Protest Revolution', sans-serif;
+          font-size: x-large;
+        }
+        p{
+          font-family: 'Libre Baskerville', serif;
+        }
+
+        input{
+          border: 0;
+        }
+        modal-dialog{
+               padding: 50%  ;
+          
+
+        }
+        .btn-close{
+          font-size: small;
+        }
+
+        .modal-title,.modal-body,.btn,.c1,.p1{
+          font-family:'EB Garamond', serif;
+        }
+
+        .card-title{
+          font-family:'EB Garamond', serif;
+          text-align: center;
+          font-weight: bold;
+
+        }
+
+        .card-text{
+          font-family:'EB Garamond', serif;
+          text-align: center;
+
+
+        }
+
+        .card-img-top:hover{
+          opacity: .7;
+        }
+
+        .icon{
+          text-align: center;
+          
+
+        }
+
+        .navbar-toggler:hover{
+          border-color: orange;
+        }
+        .nav-item:hover{
+          text-decoration: underline;
+          text-decoration-color:orange ;
+          text-underline-offset: 10px;
+          
+        }
+        .grid2{
+          /* background-color: rgb(228, 228, 228); */
+          margin-top: 0;
+        }
+
+        .grimg2 :hover{
+          scale: 1.01;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .card:hover{
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+        .card1{
+          justify-content: space-between;
+        }
+
+        @media (max-width:1999px){
+            .card1{
+                align-items: center;
+                justify-content:space-around;
+                /* margin-top: 5px; */
+            }
+        }
+
+       
+     
+
+       
+        /* .nav-link{
+          text-decoration: none;
+        }
+        .nav-link:hover{
+          color: orange;
+         
+
+        }
+        */
+
+        @media (max-width:800px) {
+          .carousel-indicators [data-bs-target] {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+}
+          }
+
+          @media (max-width:768px){
+            .grimg{
+              width: 450px;
+              height: 250px;
+              margin-top: -69px;
+              
+              
+            }
+          }
+
+
+          
+        /* @media(max-width:900px){
+          carousel-control-prev-icon [data-bs-slide] {
+            display: none;
+          }
+           
+        } */
+ 
+
+      
+        /* .carousel{
+            background-image: url(./images/comb-scissor-set-copy-space.jpg);
+            width: 100%;
+            width: auto;
+        } */
+   
