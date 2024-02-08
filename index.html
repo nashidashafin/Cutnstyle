@@ -14,6 +14,11 @@
         /* .navbar-brand{
             font-family: 'Protest Riot', sans-serif;
         } */
+        body{
+          margin-top: 0;
+          margin-right: 0;
+        }
+
         img{
             height: 400px;
         }
@@ -42,7 +47,7 @@
           font-size: small;
         }
 
-        .modal-title,.modal-body,.btn{
+        .modal-title,.modal-body,.btn,.c1,.p1{
           font-family:'EB Garamond', serif;
         }
 
@@ -72,13 +77,23 @@
                 border-radius: 50%;
 }
           }
+
+          @media (max-width:768px){
+            .grimg{
+              width: 450px;
+              height: 250px;
+              margin-top: -69px;
+              
+              
+            }
+          }
           
-        @media(max-width:800px){
+        /* @media(max-width:900px){
           carousel-control-prev-icon [data-bs-slide] {
             display: none;
           }
            
-        }
+        } */
  
 
       
@@ -240,6 +255,20 @@
     </div>
   </div>
 </div>
-
+  <div class="grid1 bg-light">
+    <div class="container w-75 mt-5 ">
+      <div class="row">
+        <div class="col-lg-6 col-md-6  mt-5 p-4">
+          <h5 class="c1">CUT & STYLE</h5>
+          <p class="p1">INDIA • SINCE • 2000</p>
+          <p class="p1">CUT&STYLE is an up-and-coming salon franchise that offers a luxurious and sophisticated experience at affordable prices. The interiors are designed to provide maximum comfort, and the products used are of the highest quality. Our team is delighted to extend an invitation to indulge you in an unparalleled experience that will leave you feeling pampered, rejuvenated, and refreshed like never before.</p>
+          <button class="btn btn-outline-warning">READ MORE</button>
+        </div>
+        <div class="col-6 mt-5 p-4">
+          <img class="grimg" src="./images/front-view-woman-cutting-client-s-hair__1_-removebg-preview.png" alt="" style="width: 350px; height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
