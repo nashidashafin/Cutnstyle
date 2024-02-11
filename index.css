@@ -39,7 +39,7 @@
           font-size: small;
         }
 
-        .modal-title,.modal-body,.btn,.c1,.p1{
+        .modal-title,.modal-body,.btn,.c1,.p1,.tb{
           font-family:'EB Garamond', serif;
         }
 
@@ -76,6 +76,8 @@
           text-underline-offset: 10px;
           
         }
+
+       
         .grid2{
           /* background-color: rgb(228, 228, 228); */
           margin-top: 0;
@@ -83,7 +85,7 @@
 
         .grimg2 :hover{
           scale: 1.01;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(139, 104, 48, 0.35) 0px 5px 15px;
         }
 
         .card:hover{
@@ -101,6 +103,16 @@
                 justify-content:space-around;
                 /* margin-top: 5px; */
             }
+        }
+
+        @media(max-width:1047px){
+          .p1{
+            font-size: small;
+          }
+          .c1{
+            font-size: small;
+
+          }
         }
 
        
@@ -135,6 +147,14 @@
             }
           }
 
+          @media(max-width:424px){
+            .grimg{
+              width: 250px ;
+              height:180px ;
+              margin-left:-84px;
+            }
+          }
+
 
           
         /* @media(max-width:900px){
@@ -152,3 +172,39 @@
             width: auto;
         } */
    
+
+        .black-theme {
+          filter: invert(100%);
+      }
+
+      .lo{
+        padding-top: 3%;
+      }
+
+      @media(max-width:843px){
+        .black-theme{
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      @media(max-width:767px){
+        .i1,.m1{
+          margin-top: 25px;
+        }
+        .img_grid2{
+          width: 250px;
+          height: 250px;
+        }
+      }
+      .grid2{
+        background-color: black;
+      }
+
+
+     @media(max-width:1046px){
+      .grtxt{
+        line-height: 25px;
+      }
+     }
+
