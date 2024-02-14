@@ -43,7 +43,7 @@
           font-family:'EB Garamond', serif;
         }
 
-        .card-title{
+        .card-title {
           font-family:'EB Garamond', serif;
           text-align: center;
           font-weight: bold;
@@ -57,7 +57,14 @@
 
         }
 
-        .card-img-top:hover{
+        .fixed-btn{
+          position:fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1;
+        }
+
+        .cimg:hover{
           opacity: .7;
         }
 
@@ -91,7 +98,7 @@
           box-shadow: rgba(139, 104, 48, 0.35) 0px 5px 15px;
         }
 
-        .card:hover{
+        .cardd:hover{
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
         }
@@ -99,6 +106,12 @@
         .card1{
           justify-content: space-between;
         }
+
+        .serv_card{
+          border: 0;
+          box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        }
+
 
         @media (max-width:1999px){
             .card1{

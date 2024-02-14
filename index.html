@@ -8,7 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     
 </head>
 <body>
@@ -60,7 +62,7 @@
 
 <!------------------------------ carousel----------------------------- -->
 
-<div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
     <div class="carousel-indicators">
       <button type="button " data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -69,14 +71,14 @@
 
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <img src="./images/hair-stylist-washing-his-client-s-hair.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5 style="color: orange;">"Transform Your Look with Precision Haircuts!"</h5>
+        <div class="carousel-caption d-md-block" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <h5 style="color: orange;" >"Transform Your Look with Precision Haircuts!"</h5>
           <p>Our expert stylists create personalized looks to suit your style and enhance your natural beauty.</p>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <img src="./images/african-american-woman-receiving-relaxing-massage-spa.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption  d-md-block">
           <h5 style="color: orange;">"Indulge in Luxury Spa Treatments"</h5>
@@ -109,11 +111,11 @@
   </div>
 
   <!-- Button trigger modal -->
-<div class="modalbtn text-center bg-black pb-5">
-  <button type="button" class="btn btn-outline-warning mt-5 ms-5 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+  <button type="button" class="btn btn-outline-warning fixed-btn mt-5 ms-5 " data-bs-toggle="modal" data-bs-target="#exampleModal">
     Book Your Slot
   </button>
-</div>
+
 
 <!-- Modal -->
 <div class="modal fade container" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -196,13 +198,147 @@
     </div>
   </div>
 
+<!-- our services -->
+
+
+  <div class="container pt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card serv_card">
+          <img src="./images/hair.jpg" class="card-img-top" alt="..." style="height: 290px;">
+          <div class="card-body" >
+            <h5 class="card-title" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >Hair Studio</h5>
+            <p class="card-text">Style your hair by experts and make them your statement. We all deserve a healthy and enriched hair that sustains its growth every day. Hair treatments and styling are the epitome of perfection at our space. Choose your style.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card serv_card">
+          <img src="./images/studio.jpg" class="card-img-top" alt="..." style="height: 290px;">
+          <div class="card-body">
+            <h5 class="card-title" data-aos="flip-left" data-aos-easing="ease-out-cubic"  data-aos-duration="2000">Beauty Studio</h5>
+            <p class="card-text">We provide you with varied beauty services at our spacious and comfortable studio. Any event big or small is covered up for you with our professional makeup artists. Our beauty services are all about bringing the best in you.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card serv_card">
+          <img src="./images/nail.jpg" class="card-img-top" alt="..." style="height: 290px;">
+          <div class="card-body">
+            <h5 class="card-title" data-aos="flip-left" data-aos-easing="ease-out-cubic"  data-aos-duration="2000">Nail Studio</h5>
+            <p class="card-text">Everyone notices nails and the way it's balanced. Our best manicure and nail styling helps you flaunt stunning nails like never before. The therapeutic experience will make you leave your stress behind. It makes a better experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card  serv_card">
+          <img src="./images/bridal.jpg" class="card-img-top" alt="..." style="height: 290px;">
+          <div class="card-body">
+            <h5 class="card-title" data-aos="flip-left" data-aos-easing="ease-out-cubic"  data-aos-duration="2000">Bridal Studio</h5>
+            <p class="card-text">Wedding is a big day for everyone. And when you decide your looks every aspect matters. Choosing the right style and makeup is valuable as you are the centre of attraction. Your confusion on a bridal makeover ends with us.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card serv_card">
+          <img src="./images/tattoo studio.jpg" class="card-img-top" alt="..." style="height: 290px;">
+          <div class="card-body">
+            <h5 class="card-title" data-aos="flip-left" data-aos-easing="ease-out-cubic"  data-aos-duration="2000">Tattoo Studio</h5>
+            <p class="card-text">Tattoos are trendy and fashionable. It is important to get inked in hygiene and considerate studio. Our professional tattoo artists make met more comfortable for you to make the right choice. Lets be your first one better with us.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card serv_card">
+          <img src="./images/spa.jpg" class="card-img-top" alt="..." style="height: 290px;">
+          <div class="card-body">
+            <h5 class="card-title" data-aos="flip-left" data-aos-easing="ease-out-cubic"  data-aos-duration="2000">Spa Center</h5>
+            <p class="card-text">Our spacious spa centre is one destination you urge to reach during stressful days. A good spa along with smoothening the skin helps you in relieving body pains. Our exclusive services always prefer your satisfaction before anything.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="container p-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class=" col-lg-6 col-md-6">
+              <div id="carouselExample" class="carousel slide" data-interval="100" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/hair1.jpg" class="d-block w-100" alt="..." style=" width: 550px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/hair2.jpg" class="d-block w-100" alt="..." style=" width: 550px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/hair3.jpg" class="d-block w-100" alt="..." style=" width: 550px;">
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">Our Delighted Clients: Testimonials of Beauty & Joy</h5>
+                <div class="container text-center"><button>View more</button></div>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+     
+
+      <!-- <div class="col-lg-6">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class=" col-lg-6 col-md-6">
+              <div id="carouselExample" class="carousel slide" data-interval="100" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/hair1.jpg" class="d-block w-100" alt="..." style=" width: 550px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/hair2.jpg" class="d-block w-100" alt="..." style=" width: 550px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/hair3.jpg" class="d-block w-100" alt="..." style=" width: 550px;">
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">Our Delighted Clients: Testimonials of Beauty & Joy</h5>
+                <div class="container text-center"><button>View more</button></div>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
 <!-- --------------card------------ -->
 
 <div class="card_demo bg-light mt-5 pt-5">
   <div class="container w-100 ">
     <div class="row container card1 w-100 d-flex ms-auto me-auto">
-      <div class="card col-lg-4 col-md-6 border-0" style="width: 20rem;">
-        <img src="./images/dinesh.jpg" class="card-img-top" alt="..." style="height: max-content; border-radius: 0;">
+      <div class="card cardd col-lg-4 col-md-6 border-0" style="width: 20rem;">
+        <img src="./images/dinesh.jpg" class="card-img-top cimg" alt="..." style="height: max-content; border-radius: 0;">
         <div class="card-body">
           <h5 class="card-title">MR. DINESH SHARMA</h5>
           <p class="card-text">CO-FOUNDER</p>
@@ -213,8 +349,8 @@
          </div>
         </div>
       </div>
-      <div class="card col-lg-4 col-md-6 border-0" style="width: 20rem;">
-        <img src="./images/rajesh.jpg" class="card-img-top" alt="..." style="height: max-content; border-radius: 0;">
+      <div class="card cardd col-lg-4 col-md-6 border-0" style="width: 20rem;">
+        <img src="./images/rajesh.jpg" class="card-img-top cimg" alt="..." style="height: max-content; border-radius: 0;">
         <div class="card-body">
           <h5 class="card-title">MR. RAJESH YADAV</h5>
           <p class="card-text">CO-FOUNDER</p>
@@ -225,8 +361,8 @@
          </div>
         </div>
       </div>
-      <div class="card col-lg-4 col-md-6 border-0 " style="width: 20rem;">
-        <img src="./images/adithya.jpg" class="card-img-top " alt="..." style="height: max-content; border-radius: 0;">
+      <div class="card cardd col-lg-4 col-md-6 border-0 " style="width: 20rem;">
+        <img src="./images/adithya.jpg" class="card-img-top cimg " alt="..." style="height: max-content; border-radius: 0;">
         <div class="card-body">
           <h5 class="card-title">MR. ADITYA SHARMA</h5>
           <p class="card-text">CEO</p>
@@ -240,6 +376,9 @@
     </div>
   </div>
 </div>
+
+
+
 
 
 <!-- footer -->
@@ -295,6 +434,12 @@
   </div>
 
 </div>
+
+
+
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
